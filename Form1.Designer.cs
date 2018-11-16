@@ -60,6 +60,9 @@ namespace HangmanGameDesktop
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
+            this.textBoxShowUsedLetters = new System.Windows.Forms.TextBox();
+            this.button28 = new System.Windows.Forms.Button();
+            this.textBoxRoundShow = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGalge)).BeginInit();
             this.SuspendLayout();
             // 
@@ -381,11 +384,41 @@ namespace HangmanGameDesktop
             this.button26.UseVisualStyleBackColor = true;
             this.button26.Click += new System.EventHandler(this.button_Click);
             // 
+            // textBoxShowUsedLetters
+            // 
+            this.textBoxShowUsedLetters.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.textBoxShowUsedLetters.Location = new System.Drawing.Point(673, 166);
+            this.textBoxShowUsedLetters.Name = "textBoxShowUsedLetters";
+            this.textBoxShowUsedLetters.Size = new System.Drawing.Size(199, 45);
+            this.textBoxShowUsedLetters.TabIndex = 53;
+            // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(692, 218);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(149, 23);
+            this.button28.TabIndex = 55;
+            this.button28.Text = "ShowUsedLetters";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.showUsedLetters);
+            // 
+            // textBoxRoundShow
+            // 
+            this.textBoxRoundShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.textBoxRoundShow.Location = new System.Drawing.Point(673, 38);
+            this.textBoxRoundShow.Name = "textBoxRoundShow";
+            this.textBoxRoundShow.Size = new System.Drawing.Size(199, 45);
+            this.textBoxRoundShow.TabIndex = 56;
+            this.textBoxRoundShow.Text = "Round";
+            // 
             // BehniasHangmanGame
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(884, 569);
+            this.Controls.Add(this.textBoxRoundShow);
+            this.Controls.Add(this.button28);
+            this.Controls.Add(this.textBoxShowUsedLetters);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button21);
@@ -463,6 +496,9 @@ namespace HangmanGameDesktop
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.TextBox textBoxShowUsedLetters;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.TextBox textBoxRoundShow;
     }
 }
 
