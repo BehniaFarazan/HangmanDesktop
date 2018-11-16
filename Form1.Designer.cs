@@ -1,6 +1,6 @@
 namespace HangmanGameDesktop
 {
-    partial class Form1
+    partial class BehniasHangmanGame
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@ namespace HangmanGameDesktop
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BehniasHangmanGame));
             this.pictureBoxGalge = new System.Windows.Forms.PictureBox();
             this.textBoxShowScore = new System.Windows.Forms.TextBox();
             this.textBoxShowLife = new System.Windows.Forms.TextBox();
@@ -114,6 +114,7 @@ namespace HangmanGameDesktop
             this.button1.TabIndex = 4;
             this.button1.Text = "A";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button_Click);
             // 
             // button2
             // 
@@ -123,6 +124,7 @@ namespace HangmanGameDesktop
             this.button2.TabIndex = 5;
             this.button2.Text = "B";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button_Click);
             // 
             // button3
             // 
@@ -132,6 +134,7 @@ namespace HangmanGameDesktop
             this.button3.TabIndex = 7;
             this.button3.Text = "C";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button_Click);
             // 
             // button4
             // 
@@ -141,6 +144,7 @@ namespace HangmanGameDesktop
             this.button4.TabIndex = 6;
             this.button4.Text = "D";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button_Click);
             // 
             // textBoxShowHiddenWord
             // 
@@ -165,6 +169,7 @@ namespace HangmanGameDesktop
             this.button5.TabIndex = 34;
             this.button5.Text = "E";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button_Click);
             // 
             // button6
             // 
@@ -174,6 +179,7 @@ namespace HangmanGameDesktop
             this.button6.TabIndex = 33;
             this.button6.Text = "F";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button_Click);
             // 
             // button7
             // 
@@ -183,6 +189,7 @@ namespace HangmanGameDesktop
             this.button7.TabIndex = 32;
             this.button7.Text = "G";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button_Click);
             // 
             // button8
             // 
@@ -192,6 +199,7 @@ namespace HangmanGameDesktop
             this.button8.TabIndex = 31;
             this.button8.Text = "H";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button_Click);
             // 
             // button9
             // 
@@ -201,6 +209,7 @@ namespace HangmanGameDesktop
             this.button9.TabIndex = 38;
             this.button9.Text = "I";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button_Click);
             // 
             // button10
             // 
@@ -210,6 +219,7 @@ namespace HangmanGameDesktop
             this.button10.TabIndex = 37;
             this.button10.Text = "J";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button_Click);
             // 
             // button11
             // 
@@ -219,6 +229,7 @@ namespace HangmanGameDesktop
             this.button11.TabIndex = 36;
             this.button11.Text = "K";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button_Click);
             // 
             // button12
             // 
@@ -228,6 +239,7 @@ namespace HangmanGameDesktop
             this.button12.TabIndex = 35;
             this.button12.Text = "L";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button_Click);
             // 
             // button13
             // 
@@ -237,6 +249,7 @@ namespace HangmanGameDesktop
             this.button13.TabIndex = 42;
             this.button13.Text = "M";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button_Click);
             // 
             // button14
             // 
@@ -246,6 +259,7 @@ namespace HangmanGameDesktop
             this.button14.TabIndex = 41;
             this.button14.Text = "N";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button_Click);
             // 
             // button15
             // 
@@ -255,6 +269,7 @@ namespace HangmanGameDesktop
             this.button15.TabIndex = 40;
             this.button15.Text = "O";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button_Click);
             // 
             // button16
             // 
@@ -264,6 +279,7 @@ namespace HangmanGameDesktop
             this.button16.TabIndex = 39;
             this.button16.Text = "P";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button_Click);
             // 
             // button17
             // 
@@ -273,6 +289,7 @@ namespace HangmanGameDesktop
             this.button17.TabIndex = 46;
             this.button17.Text = "Q";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button_Click);
             // 
             // button18
             // 
@@ -282,6 +299,7 @@ namespace HangmanGameDesktop
             this.button18.TabIndex = 45;
             this.button18.Text = "R";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button_Click);
             // 
             // button19
             // 
@@ -291,6 +309,7 @@ namespace HangmanGameDesktop
             this.button19.TabIndex = 44;
             this.button19.Text = "S";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button_Click);
             // 
             // button20
             // 
@@ -300,6 +319,7 @@ namespace HangmanGameDesktop
             this.button20.TabIndex = 43;
             this.button20.Text = "T";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button_Click);
             // 
             // button21
             // 
@@ -309,6 +329,7 @@ namespace HangmanGameDesktop
             this.button21.TabIndex = 50;
             this.button21.Text = "U";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button_Click);
             // 
             // button22
             // 
@@ -318,6 +339,7 @@ namespace HangmanGameDesktop
             this.button22.TabIndex = 49;
             this.button22.Text = "V";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button_Click);
             // 
             // button23
             // 
@@ -327,6 +349,7 @@ namespace HangmanGameDesktop
             this.button23.TabIndex = 48;
             this.button23.Text = "W";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button_Click);
             // 
             // button24
             // 
@@ -336,6 +359,7 @@ namespace HangmanGameDesktop
             this.button24.TabIndex = 47;
             this.button24.Text = "X";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button_Click);
             // 
             // button25
             // 
@@ -345,6 +369,7 @@ namespace HangmanGameDesktop
             this.button25.TabIndex = 52;
             this.button25.Text = "Y";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button_Click);
             // 
             // button26
             // 
@@ -354,8 +379,9 @@ namespace HangmanGameDesktop
             this.button26.TabIndex = 51;
             this.button26.Text = "Z";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button_Click);
             // 
-            // Form1
+            // BehniasHangmanGame
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
@@ -395,7 +421,7 @@ namespace HangmanGameDesktop
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "BehniasHangmanGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGalge)).EndInit();

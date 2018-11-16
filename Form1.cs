@@ -13,16 +13,16 @@ using System.Windows.Forms;
 
 namespace HangmanGameDesktop
 {
-    public partial class Form1 : Form
+    public partial class BehniasHangmanGame : Form
     {
-        public Form1()
+        public BehniasHangmanGame()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -32,6 +32,9 @@ namespace HangmanGameDesktop
 
         private void button_Click(object sender, EventArgs e)
         {
+           //Do something when a char button isc clicked test!
+           Button button = (Button)sender;
+           textBoxShowWord.Text = button.Text;
 
         }
 
@@ -44,5 +47,6 @@ namespace HangmanGameDesktop
         {
 
         }
+
     }
 }
