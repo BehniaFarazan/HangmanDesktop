@@ -25,12 +25,22 @@ namespace HangmanGameDesktop
 
         }
 
-        private void Form1_Load_1(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxShowHiddenWord_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxShowWord_TextChanged(object sender, EventArgs e)
         {
 
         }

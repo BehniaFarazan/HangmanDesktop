@@ -118,6 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBoxGalge.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAKoAAADNCAYAAAAoh+tgAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAAy9JREFUeF7t28FtWkEARVFKcCkugRJcgkuhBEpxCZTgEijBHRBNZEWR+ZvEM9G/
+        4RzpSchezXCFPgsONwgQKglCJUGoJOwu1MvlYpN3vV4/b7drF6F+fHzcnp6ebofDwRbudDp93njPLkJ9
+        fX3dvFibv+qn6y5CPR6Pm5dq8zceBYqE+mAT6jcI9d9NqN+wFerz8/Ovb6325zufz3d3Ojb+V7TbUMff
+        +HsjyK93OibUbxDqfEJdQKjzCXUBoc4n1AWEOp9QFxDqfEJdQKjzCXUBoc4n1AWEOp9QFxDqfEJdQKjz
+        CXUBoc4n1AWEOp9QFxDqfEJdQKjzCXUBoc4n1AWEOp9QFxDqfEJdQKjzCXUBoc4n1AWEOp9QFxDqfEJd
+        QKhrfL3TsfEz6iKhkiBUEoRKglBJECoJQiVBqCQIlQShkiBUEoRKglBJECoJQiVBqCQIlQShkiBUEoRK
+        glBJECoJQiVBqCQIlQShkiBUEoRKglBJECoJQiVBqCQIlQShkiBUEoRKglBJECoJQiVBqCQIlQShkiBU
+        EoRKglBJECoJQiVBqCQIlQShkiBUEoRKglBJECoJQiVBqCQIlQShkiBUEoRKglBJECoJQiVBqCQIlQSh
+        kiBUEoRKglBJECoJQiVBqCQIlQShkiBUEoRKglBJECoJQiVBqCQIlQShkiBUEoRKglBJEOok1+v18xUr
+        CJUEoZIgVBKESoJQSRAqCUIlQagkCJUEoZIgVBKESoJQSRAqCUIlQagkCJUEoZIgVBKESoJQSRAqCUIl
+        QagkCJUEoZIgVBKESoJQSRAqCUIlQagkCJUEoZIgVBKESoJQSRAqCUIlQagkCJUEoZIgVBKESoJQSRAq
+        CUIlQagkCJUEoZIgVBKESoJQSRAqCUIlQagkCJUEoZIgVBKESoJQSRAqCUIlQagkCJUEoZIgVBKESoJQ
+        SRAqCUIlQagkCJUEoZIgVBI2Q315edmM53/dOOs4M/t1F+rpdNp8Mx9h4+zs012oj/RJ+nUeN/ZLqL9N
+        qPt1F+rb29vmm/gIG2dnnza/TL2/v/98XnukjTOzX5uhwt4IlQShkiBUEoRKwO32AyKWZN5krhCoAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAMMOAADDDgAAAAAAAAAA
