@@ -16,7 +16,7 @@ namespace HangmanGameDesktop
     public partial class Form1 : Form
     {
         Mylogic mylogic = new Mylogic();
-        int test = 0;
+      
         public Form1()
         {
             InitializeComponent();
@@ -30,13 +30,14 @@ namespace HangmanGameDesktop
         }
         private void button_Click(object sender, EventArgs e)
         {
-            test++;
+           
             updateDisplay();
         }
         public void updateDisplay()
         {
-            //switch (mylogic.getThisIsnrWrongGuess())
-                  switch (test)
+
+            // switch (test)
+            switch (mylogic.getThisIsnrWrongGuess())
             {
                 case 0:
                     pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert0.png";
