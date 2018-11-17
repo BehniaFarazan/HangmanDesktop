@@ -80,10 +80,9 @@ namespace HangmanGameDesktop
             this.textBoxShowScore.Location = new System.Drawing.Point(12, 12);
             this.textBoxShowScore.Name = "textBoxShowScore";
             this.textBoxShowScore.ReadOnly = true;
-            this.textBoxShowScore.Size = new System.Drawing.Size(149, 38);
+            this.textBoxShowScore.Size = new System.Drawing.Size(223, 38);
             this.textBoxShowScore.TabIndex = 1;
             this.textBoxShowScore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxShowScore.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBoxShowLife
             // 
@@ -91,7 +90,7 @@ namespace HangmanGameDesktop
             this.textBoxShowLife.Location = new System.Drawing.Point(12, 85);
             this.textBoxShowLife.Name = "textBoxShowLife";
             this.textBoxShowLife.ReadOnly = true;
-            this.textBoxShowLife.Size = new System.Drawing.Size(149, 38);
+            this.textBoxShowLife.Size = new System.Drawing.Size(223, 38);
             this.textBoxShowLife.TabIndex = 2;
             this.textBoxShowLife.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -100,7 +99,7 @@ namespace HangmanGameDesktop
             this.textBoxShowWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.textBoxShowWord.Location = new System.Drawing.Point(12, 166);
             this.textBoxShowWord.Name = "textBoxShowWord";
-            this.textBoxShowWord.Size = new System.Drawing.Size(149, 38);
+            this.textBoxShowWord.Size = new System.Drawing.Size(223, 38);
             this.textBoxShowWord.TabIndex = 3;
             this.textBoxShowWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -150,10 +149,10 @@ namespace HangmanGameDesktop
             this.textBoxShowHiddenWord.Cursor = System.Windows.Forms.Cursors.No;
             this.textBoxShowHiddenWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.textBoxShowHiddenWord.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.textBoxShowHiddenWord.Location = new System.Drawing.Point(399, 239);
+            this.textBoxShowHiddenWord.Location = new System.Drawing.Point(305, 239);
             this.textBoxShowHiddenWord.Name = "textBoxShowHiddenWord";
             this.textBoxShowHiddenWord.ReadOnly = true;
-            this.textBoxShowHiddenWord.Size = new System.Drawing.Size(100, 38);
+            this.textBoxShowHiddenWord.Size = new System.Drawing.Size(256, 38);
             this.textBoxShowHiddenWord.TabIndex = 30;
             this.textBoxShowHiddenWord.Text = "XXXXX";
             this.textBoxShowHiddenWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
