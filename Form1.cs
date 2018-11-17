@@ -31,8 +31,22 @@ namespace HangmanGameDesktop
         }
         private void button_Click(object sender, EventArgs e)
         {
-           
-    
+            Button button = (Button)sender;
+
+            //textBoxShowWord.Text = button.Text;
+
+            String guessLetter = button.Text;
+            mylogic.guess(guessLetter);
+           // updateDisplay();
+            if (mylogic.isItIsCorrectGuess())
+            {
+                button.BackColor = Color.Green;
+            }
+            else
+            {
+                button.BackColor = Color.Red;
+            }
+
         }
         public void updateDisplay()
         {

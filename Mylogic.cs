@@ -68,7 +68,7 @@ namespace HangmanGameDesktop
 
         public int getwordScore()
         {
-           wordScore = theWord.Length * 1000;
+            wordScore = theWord.Length * 1000;
             return wordScore;
         }
 
@@ -100,14 +100,15 @@ namespace HangmanGameDesktop
             theGameIsLost = false;
             IsCorrectGuess = false;
         }
+
         public void guessLetter(String letter)
         {
             thisIsnrTotGuess++;
-            if (getTheWord().Contains(letter))
+            if (theWord.Contains(letter))
             {
                 IsCorrectGuess = true;
                 updateXWord(letter);
-                if (thisIsnrCorrectGuess == getTheWord().Length)
+                if (thisIsnrCorrectGuess == theWord.Length)
                 {
                     thisGameIsWon = true;
                 }
@@ -134,7 +135,7 @@ namespace HangmanGameDesktop
             StringBuilder replacement = new StringBuilder(xWord);
             for (int n = 0; n < theWord.Length; n++)
             {
-                thisLetter = getTheWord()[0];
+                thisLetter = theWord[0];
                 if (thisLetter == letter[0])
                 {
                     //  replacement.setCharAt(n, thisLetter);
@@ -145,5 +146,20 @@ namespace HangmanGameDesktop
                 }
             }
         }
+
+       public void guess(String guess)
+        {
+
+          guessLetter(guess);
+
+          // updateDisplay();
+
+        }
+
+        public Boolean isItIsCorrectGuess()
+        {
+            return IsCorrectGuess;
+        }
+
     }
 }
