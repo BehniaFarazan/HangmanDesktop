@@ -103,6 +103,8 @@ namespace HangmanGameDesktop
                     //    pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert6.png";
                     pictureBoxGalge.ImageLocation = "C:\\Users\\bf.it\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert6.png";
                     pictureBoxGalge.SizeMode = PictureBoxSizeMode.AutoSize;
+                    Form dlg1 = new Form();
+                    dlg1.ShowDialog();
                     break;
 
             }
