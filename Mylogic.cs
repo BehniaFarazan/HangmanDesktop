@@ -39,13 +39,40 @@ namespace HangmanGameDesktop
            return possibleWord[random.Next(possibleWord.Count)];
         }
 
+
+        public void updateChoosenWord()
+        {
+            wordScore = theWord.Length * 1000;
+            getxWord();
+            round++;
+        }
+        public void updateWord()
+        {
+           // add();
+          //  theWord = getRandomPossibleWord();
+          //  wordScore = theWord.Length * 1000;
+            getxWord();
+            round++;
+        }
+
+
+
+
+
+
         public String getTheWord() {
             theWord = getRandomPossibleWord();
             return theWord ;
         }
 
 
-        public String makeWordHidden()
+        public int getwordScore()
+        {
+           wordScore = theWord.Length * 1000;
+            return wordScore;
+        }
+
+        public String getxWord()
         {
          
             for (int i =0; i< theWord.Length ; i++)
@@ -59,17 +86,64 @@ namespace HangmanGameDesktop
 
         public int getThisIsnrWrongGuess()
         {
-            return 0;
+            return thisIsnrWrongGuess;
         }
 
 
+        public void reset()
+        {
+            thisIsnrWrongGuess = 0;
+            wordScore = 0;
+            thisIsnrCorrectGuess = 0;
+            thisIsnrTotGuess = 0;
+            thisGameIsWon = false;
+            theGameIsLost = false;
+            IsCorrectGuess = false;
+        }
+        public void guessLetter(String letter)
+        {
+            thisIsnrTotGuess++;
+            if (getTheWord().Contains(letter))
+            {
+                IsCorrectGuess = true;
+                updateXWord(letter);
+                if (thisIsnrCorrectGuess == getTheWord().Length)
+                {
+                    thisGameIsWon = true;
+                }
 
-        public void setTheWord(String theWord) {
-            
+            }
+            else
+            {
+                IsCorrectGuess = false;
+                wordScore -= letterScore;
+                if (wordScore < 0)
+                {
+                    wordScore = 0;
+                }
+                thisIsnrWrongGuess = thisIsnrWrongGuess + 1;
+                if (thisIsnrWrongGuess > 6)
+                {
+                    theGameIsLost = true;
+                }
+            }
         }
 
-        public void changeGalgePic() {
-
+        public void updateXWord(String letter)
+        {
+            StringBuilder replacement = new StringBuilder(xWord);
+            for (int n = 0; n < theWord.Length; n++)
+            {
+                thisLetter = getTheWord()[0];
+                if (thisLetter == letter[0])
+                {
+                    //  replacement.setCharAt(n, thisLetter);
+                    replacement[n] = thisLetter;
+                    // xWord = String.valueOf(replacement);
+                    xWord = replacement.ToString();
+                    thisIsnrCorrectGuess++;
+                }
+            }
         }
     }
 }

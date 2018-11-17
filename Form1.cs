@@ -20,51 +20,63 @@ namespace HangmanGameDesktop
         public Form1()
         {
             InitializeComponent();
+        
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            textBoxShowWord.Text = mylogic.getTheWord();
-            textBoxShowHiddenWord.Text = mylogic.makeWordHidden();
+           
             updateDisplay();
+      
         }
         private void button_Click(object sender, EventArgs e)
         {
            
-            updateDisplay();
+    
         }
         public void updateDisplay()
         {
-
+          
+            textBoxShowWord.Text = mylogic.getTheWord();
+            textBoxShowHiddenWord.Text = mylogic.getxWord();
+            textBoxShowScore.Text = Convert.ToString(mylogic.getwordScore());
             // switch (test)
             switch (mylogic.getThisIsnrWrongGuess())
             {
                 case 0:
-                    pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert0.png";
+                    //pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert0.png";
+                    pictureBoxGalge.ImageLocation = "C:\\Users\\bf.it\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert0.png";
+
                     pictureBoxGalge.SizeMode = PictureBoxSizeMode.AutoSize;
                     break;
                 case 1:
-                    pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert1.png";
+                    //   pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert1.png";
+                    pictureBoxGalge.ImageLocation = "C:\\Users\\bf.it\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert1.png";
                     pictureBoxGalge.SizeMode = PictureBoxSizeMode.AutoSize;
                     break;
                 case 2:
-                    pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert2.png";
+                    // pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert2.png";
+                    pictureBoxGalge.ImageLocation = "C:\\Users\\bf.it\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert2.png";
                     pictureBoxGalge.SizeMode = PictureBoxSizeMode.AutoSize;
                     break;
                 case 3:
-                    pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert3.png";
+                    //  pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert3.png";
+                    pictureBoxGalge.ImageLocation = "C:\\Users\\bf.it\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert3.png";
                     pictureBoxGalge.SizeMode = PictureBoxSizeMode.AutoSize;
                     break;
                 case 4:
-                    pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert4.png";
+                    // pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert4.png";
+                    pictureBoxGalge.ImageLocation = "C:\\Users\\bf.it\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert4.png";
                     pictureBoxGalge.SizeMode = PictureBoxSizeMode.AutoSize;
                     break;
                 case 5:
-                    pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert5.png";
+                    //  pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert5.png";
+                    pictureBoxGalge.ImageLocation = "C:\\Users\\bf.it\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert5.png";
                     pictureBoxGalge.SizeMode = PictureBoxSizeMode.AutoSize;
                     break;
                 case 6:
-                    pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert6.png";
+                    //    pictureBoxGalge.ImageLocation = "C:\\Users\\Behnia\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert6.png";
+                    pictureBoxGalge.ImageLocation = "C:\\Users\\bf.it\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert6.png";
                     pictureBoxGalge.SizeMode = PictureBoxSizeMode.AutoSize;
                     break;
 
