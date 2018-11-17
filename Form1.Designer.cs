@@ -76,6 +76,7 @@ namespace HangmanGameDesktop
             // 
             // textBoxShowScore
             // 
+            this.textBoxShowScore.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxShowScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.textBoxShowScore.Location = new System.Drawing.Point(12, 12);
             this.textBoxShowScore.Name = "textBoxShowScore";
@@ -86,6 +87,7 @@ namespace HangmanGameDesktop
             // 
             // textBoxShowLife
             // 
+            this.textBoxShowLife.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxShowLife.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.textBoxShowLife.Location = new System.Drawing.Point(12, 85);
             this.textBoxShowLife.Name = "textBoxShowLife";

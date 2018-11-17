@@ -59,7 +59,6 @@ namespace HangmanGameDesktop
 
         public int getThisIsnrWrongGuess()
         {
-
             return 0;
         }
 
