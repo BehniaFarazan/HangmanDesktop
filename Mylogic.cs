@@ -27,11 +27,9 @@ namespace HangmanGameDesktop
         private List<String> UsedLetters = new List<String>();
         public void add()
         {
-            possibleWord.Add("BUSTICKET");
-            possibleWord.Add("DTU");
-            possibleWord.Add("MATCH");
+            
             possibleWord.Add("COPENHAGEN");
-            possibleWord.Add("KEYBOARD");
+
             UsedLetters = new List<String>();
         }
         private  String getRandomPossibleWord()
@@ -158,7 +156,7 @@ namespace HangmanGameDesktop
             StringBuilder replacement = new StringBuilder(xWord);
             for (int n = 0; n < theWord.Length; n++)
             {
-                thisLetter = theWord[0];
+                thisLetter = theWord[n];
                 if (thisLetter == letter[0])
                 {
                     //  replacement.setCharAt(n, thisLetter);
@@ -174,7 +172,7 @@ namespace HangmanGameDesktop
         {
 
           guessLetter(guess);
-
+            
          
 
         }

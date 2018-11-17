@@ -55,7 +55,7 @@ namespace HangmanGameDesktop
                 button.BackColor = Color.Red;
             }
             button.Enabled = false;
-            mylogic.showXWord();
+            //mylogic.showXWord();
 
             updateDisplay();
         }
