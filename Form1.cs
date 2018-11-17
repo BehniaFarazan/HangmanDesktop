@@ -25,9 +25,17 @@ namespace HangmanGameDesktop
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+
+            mylogic.reset();
+
+         
+            mylogic.updateWord();
+
+            textBoxShowWord.Text = mylogic.getTheWord();
+            textBoxShowHiddenWord.Text = mylogic.getxWord();
+            textBoxShowScore.Text = Convert.ToString(mylogic.getwordScore());
             updateDisplay();
-      
+
         }
         private void button_Click(object sender, EventArgs e)
         {
@@ -37,7 +45,7 @@ namespace HangmanGameDesktop
 
             String guessLetter = button.Text;
             mylogic.guess(guessLetter);
-           // updateDisplay();
+           
             if (mylogic.isItIsCorrectGuess())
             {
                 button.BackColor = Color.Green;
@@ -46,12 +54,15 @@ namespace HangmanGameDesktop
             {
                 button.BackColor = Color.Red;
             }
+            button.Enabled = false;
+            mylogic.showXWord();
 
+            updateDisplay();
         }
         public void updateDisplay()
         {
           
-            textBoxShowWord.Text = mylogic.getTheWord();
+            //textBoxShowWord.Text = mylogic.getTheWord();
             textBoxShowHiddenWord.Text = mylogic.getxWord();
             textBoxShowScore.Text = Convert.ToString(mylogic.getwordScore());
             // switch (test)
