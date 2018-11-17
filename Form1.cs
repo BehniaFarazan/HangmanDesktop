@@ -17,7 +17,7 @@ namespace HangmanGameDesktop
     {
         private static List<String> usedLetters = new List<String>();
         private Mylogic mylogic = Mylogic.getInstance();
-        private int BTN_AMOUNT = 26;
+      //  private int BTN_AMOUNT = 26;
         private Button[] btnArray = new Button[26];
         Image galgePic;
         TextBox theWordShow, theScoreShow, theRoundShow;
