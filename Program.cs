@@ -12,11 +12,15 @@ namespace HangmanGameDesktop
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
+      
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+          WordService wc = new WordService();
+            Console.WriteLine("Words ISSSSS: "+ wc.getWordFormWeb());
             Application.Run(new Form1());
+            
         }
         //
     }

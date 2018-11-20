@@ -42,7 +42,7 @@ namespace HangmanGameDesktop
            // words = data.Split("\n");
             //words.ToArray(new HashSet<String>(Array.(data.Split(" "))));
            
-            return words[random.Next(0,words.Length-1)];
+            return words[2];
 
         }
 
