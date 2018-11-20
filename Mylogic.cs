@@ -25,17 +25,35 @@ namespace HangmanGameDesktop
         private Boolean IsCorrectGuess = false;
         private List<String> possibleWord = new List<String>();
         private List<String> UsedLetters = new List<String>();
+        WordService wc = new WordService();
         public void add()
         {
             
             possibleWord.Add("COPENHAGEN");
-
+            possibleWord.Add("BUSTICKET");
+            possibleWord.Add("TRAIN");
+            possibleWord.Add("LONDON");
+            possibleWord.Add("GOALLIST");
+            possibleWord.Add("DTU");
+            possibleWord.Add("FRANCE");
+            possibleWord.Add("DANMARK");
+            possibleWord.Add("CPU");
+            possibleWord.Add("ROAD");
+            possibleWord.Add("HEART");
+            possibleWord.Add("BARCELONA");
+            possibleWord.Add("LIVERPOOL");
+            possibleWord.Add("FRANCE");
+            possibleWord.Add("ANDROIDSTUDIO");
+            possibleWord.Add("MATCH");
+            possibleWord.Add("KEYBOARD");
             UsedLetters = new List<String>();
         }
         private  String getRandomPossibleWord()
         {
            add();
-           return possibleWord[random.Next(possibleWord.Count)];
+      
+            return possibleWord[random.Next(possibleWord.Count)];
+        
         }
 
         public List<String> getUsedLetters()
@@ -67,24 +85,19 @@ namespace HangmanGameDesktop
 
 
         public String getTheWord() {
-           // theWord = getRandomPossibleWord();
             return theWord ;
         }
 
 
         public int getwordScore()
         {
-           // wordScore = theWord.Length * 1000;
+           
             return wordScore;
         }
 
         public String getxWord()
         {
-         
-   //         for (int i =0; i< theWord.Length ; i++)
-     //       {
-       //         xWord = xWord + "#";
-         //   }
+
 
             return xWord;
         }
@@ -98,7 +111,7 @@ namespace HangmanGameDesktop
         }
         public void updateWord()
         {
-            add();
+          //  add();
             theWord = getRandomPossibleWord();
             wordScore = theWord.Length * 1000;
             showXWord();
@@ -159,9 +172,7 @@ namespace HangmanGameDesktop
                 thisLetter = theWord[n];
                 if (thisLetter == letter[0])
                 {
-                    //  replacement.setCharAt(n, thisLetter);
                     replacement[n] = thisLetter;
-                    // xWord = String.valueOf(replacement);
                     xWord = replacement.ToString();
                     thisIsnrCorrectGuess++;
                 }

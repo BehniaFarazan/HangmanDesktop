@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -54,6 +56,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WordService.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,6 +68,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,6 +83,32 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="res\drawable\forkert0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\drawable\forkert1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\drawable\forkert2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\drawable\forkert3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\drawable\forkert4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\drawable\forkert5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\drawable\forkert6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\drawable\nice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\drawable\sad.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -68,9 +68,10 @@ namespace HangmanGameDesktop
             // 
             // pictureBoxGalge
             // 
+            this.pictureBoxGalge.Image = global::HangmanGameDesktop.Properties.Resources.forkert0;
             this.pictureBoxGalge.Location = new System.Drawing.Point(364, 27);
             this.pictureBoxGalge.Name = "pictureBoxGalge";
-            this.pictureBoxGalge.Size = new System.Drawing.Size(165, 206);
+            this.pictureBoxGalge.Size = new System.Drawing.Size(170, 205);
             this.pictureBoxGalge.TabIndex = 0;
             this.pictureBoxGalge.TabStop = false;
             // 
@@ -81,7 +82,7 @@ namespace HangmanGameDesktop
             this.textBoxShowScore.Location = new System.Drawing.Point(12, 12);
             this.textBoxShowScore.Name = "textBoxShowScore";
             this.textBoxShowScore.ReadOnly = true;
-            this.textBoxShowScore.Size = new System.Drawing.Size(223, 38);
+            this.textBoxShowScore.Size = new System.Drawing.Size(280, 38);
             this.textBoxShowScore.TabIndex = 1;
             this.textBoxShowScore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -92,16 +93,16 @@ namespace HangmanGameDesktop
             this.textBoxShowLife.Location = new System.Drawing.Point(12, 85);
             this.textBoxShowLife.Name = "textBoxShowLife";
             this.textBoxShowLife.ReadOnly = true;
-            this.textBoxShowLife.Size = new System.Drawing.Size(223, 38);
+            this.textBoxShowLife.Size = new System.Drawing.Size(280, 38);
             this.textBoxShowLife.TabIndex = 2;
             this.textBoxShowLife.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxShowWord
             // 
-            this.textBoxShowWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.textBoxShowWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.textBoxShowWord.Location = new System.Drawing.Point(12, 166);
             this.textBoxShowWord.Name = "textBoxShowWord";
-            this.textBoxShowWord.Size = new System.Drawing.Size(223, 38);
+            this.textBoxShowWord.Size = new System.Drawing.Size(280, 35);
             this.textBoxShowWord.TabIndex = 3;
             this.textBoxShowWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
