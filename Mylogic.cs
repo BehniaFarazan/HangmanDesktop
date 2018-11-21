@@ -111,8 +111,9 @@ namespace HangmanGameDesktop
         }
         public void updateWord()
         {
-          //  add();
-            theWord = getRandomPossibleWord();
+            //  add();
+            // theWord = getRandomPossibleWord();
+            theWord = wc.getWordFormWeb();
             wordScore = theWord.Length * 1000;
             showXWord();
             round++;
