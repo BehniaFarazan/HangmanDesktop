@@ -18,20 +18,25 @@ namespace HangmanGameDesktop
       public String getWordFormWeb()
         {
             //List<String> words = new List<String>();
-    
 
 
-            data = wc.DownloadString("http://www.mit.edu/~ecprice/wordlist.10000");
 
+
+            
+            //  data = wc.DownloadString("http://www.mit.edu/~ecprice/wordlist.10000");
+            data = wc.DownloadString("https://www.bold.dk/");
             // Removes all the special characters.
             //data = data.Replace("<.+?>", " ").ToLower().Replace("[^a-z]", " ");
+           // data = Regex.Replace(data, @"(?></?\w+)(?>(?:[^>'""]+|'[^']*'|""[^""]*"")*)>", string.Empty);
+            data = Regex.Replace(data, @"(?></?\w+)(?>(?:[^>'""]+|'[^']*'|""[^""]*"")*)>", "TEST");
 
             // Remove words consisting of 1 letter.
-             data.Replace("[a-z]", " ");
+            //data.Replace("[a-z]", " ");
 
             // Remove words consisting of 2 letters.
             //data.Replace(" [a-z][a-z] ", " ");
             //data.Replace(@"<.*?>", "TEST");
+            //  data.Replace(@"(?></?\w+)(?>(?:[^>'""]+|'[^']*'|""[^""]*"")*)>", "TEST");
             //data.Replace(@"(\<(\/)?(\w)*(\d)?\>)", "TEST");
             // Removes æ, ø and å.
             //data.Replace("&#198;", "æ"); // erstat HTML-tegn
