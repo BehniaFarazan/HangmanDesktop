@@ -61,6 +61,14 @@ namespace HangmanGameDesktop
             //mylogic.showXWord();
 
             updateDisplay();
+            if (mylogic.isThisGameIsWon())
+            {
+
+            } else if (mylogic.isTheGameLost())
+            {
+                Form dlg1 = new Form();
+                dlg1.ShowDialog();
+            }
         }
         public void updateDisplay()
         {
@@ -112,8 +120,8 @@ namespace HangmanGameDesktop
                     // pictureBoxGalge.ImageLocation = "C:\\Users\\bf.it\\source\\repos\\BehniaFarazan\\HangmanDesktop\\res\\drawable\\forkert6.png";
                     pictureBoxGalge.Image = HangmanGameDesktop.Properties.Resources.forkert6;
                     pictureBoxGalge.SizeMode = PictureBoxSizeMode.AutoSize;
-                    Form dlg1 = new Form();
-                    dlg1.ShowDialog();
+                   // Form dlg1 = new Form();
+                  //  dlg1.ShowDialog();
                     break;
 
             }

@@ -86,7 +86,23 @@ namespace HangmanGameDesktop
         }
 
 
+        public Boolean isThisGameIsWon()
+        {
 
+            return thisGameIsWon;
+        }
+
+        public Boolean isTheGameLost()
+        {
+
+            return theGameIsLost;
+        }
+
+        public Boolean isTheGameOver()
+        {
+
+            return theGameIsLost || thisGameIsWon;
+        }
 
         public String getTheWord() {
             return theWord ;
