@@ -31,7 +31,6 @@ namespace HangmanGameDesktop
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBoxGalge = new System.Windows.Forms.PictureBox();
             this.textBoxShowScore = new System.Windows.Forms.TextBox();
-            this.textBoxShowLife = new System.Windows.Forms.TextBox();
             this.textBoxShowWord = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -63,6 +62,7 @@ namespace HangmanGameDesktop
             this.textBoxShowUsedLetters = new System.Windows.Forms.TextBox();
             this.button28 = new System.Windows.Forms.Button();
             this.textBoxRoundShow = new System.Windows.Forms.TextBox();
+            this.textBoxShowLife = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGalge)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,17 +85,6 @@ namespace HangmanGameDesktop
             this.textBoxShowScore.Size = new System.Drawing.Size(280, 38);
             this.textBoxShowScore.TabIndex = 1;
             this.textBoxShowScore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxShowLife
-            // 
-            this.textBoxShowLife.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxShowLife.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBoxShowLife.Location = new System.Drawing.Point(12, 85);
-            this.textBoxShowLife.Name = "textBoxShowLife";
-            this.textBoxShowLife.ReadOnly = true;
-            this.textBoxShowLife.Size = new System.Drawing.Size(280, 38);
-            this.textBoxShowLife.TabIndex = 2;
-            this.textBoxShowLife.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxShowWord
             // 
@@ -405,6 +394,17 @@ namespace HangmanGameDesktop
             this.textBoxRoundShow.Size = new System.Drawing.Size(199, 45);
             this.textBoxRoundShow.TabIndex = 56;
             // 
+            // textBoxShowLife
+            // 
+            this.textBoxShowLife.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxShowLife.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.textBoxShowLife.Location = new System.Drawing.Point(12, 85);
+            this.textBoxShowLife.Name = "textBoxShowLife";
+            this.textBoxShowLife.ReadOnly = true;
+            this.textBoxShowLife.Size = new System.Drawing.Size(280, 38);
+            this.textBoxShowLife.TabIndex = 2;
+            this.textBoxShowLife.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -461,7 +461,6 @@ namespace HangmanGameDesktop
 
         private System.Windows.Forms.PictureBox pictureBoxGalge;
         private System.Windows.Forms.TextBox textBoxShowScore;
-        private System.Windows.Forms.TextBox textBoxShowLife;
         private System.Windows.Forms.TextBox textBoxShowWord;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -493,5 +492,6 @@ namespace HangmanGameDesktop
         private System.Windows.Forms.TextBox textBoxShowUsedLetters;
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.TextBox textBoxRoundShow;
+        private System.Windows.Forms.TextBox textBoxShowLife;
     }
 }

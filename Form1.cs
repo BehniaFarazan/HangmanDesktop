@@ -36,6 +36,7 @@ namespace HangmanGameDesktop
             textBoxShowWord.Text = mylogic.getTheWord();
             textBoxShowHiddenWord.Text = mylogic.getxWord();
             textBoxShowScore.Text = Convert.ToString(mylogic.getwordScore());
+            textBoxRoundShow.Text = Convert.ToString(mylogic.getRound());
             updateDisplay();
 
         }

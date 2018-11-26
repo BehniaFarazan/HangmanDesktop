@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//TOdo= win/lose scenario
 namespace HangmanGameDesktop
 {
    
@@ -61,7 +61,11 @@ namespace HangmanGameDesktop
 
             return UsedLetters;
         }
+        public int  getRound()
+        {
 
+            return round;
+        }
 
 
         public void showXWord()
@@ -111,6 +115,7 @@ namespace HangmanGameDesktop
         }
         public void updateWord()
         {
+            //Manual wordlist
             //  add();
             // theWord = getRandomPossibleWord();
             theWord = ws.getWordFromWeb();
