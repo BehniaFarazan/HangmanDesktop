@@ -22,6 +22,6 @@ namespace HangmanGameDesktop
             Application.Run(new Form1());
             
         }
-        //
+        //merged
     }
 }
