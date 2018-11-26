@@ -25,7 +25,7 @@ namespace HangmanGameDesktop
         private Boolean IsCorrectGuess = false;
         private List<String> possibleWord = new List<String>();
         private List<String> UsedLetters = new List<String>();
-        WordService wc = new WordService();
+        WordService ws = new WordService();
         public void add()
         {
             
@@ -113,7 +113,7 @@ namespace HangmanGameDesktop
         {
             //  add();
             // theWord = getRandomPossibleWord();
-            theWord = wc.getWordFormWeb();
+            theWord = ws.getWordFromWeb();
             wordScore = theWord.Length * 1000;
             showXWord();
             round++;

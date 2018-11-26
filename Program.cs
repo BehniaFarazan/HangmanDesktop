@@ -18,7 +18,7 @@ namespace HangmanGameDesktop
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
           WordService wc = new WordService();
-            Console.WriteLine("Words ISSSSS: "+ wc.getWordFormWeb());
+            Console.WriteLine("Words ISSSSS: "+ wc.getWordFromWeb());
             Application.Run(new Form1());
             
         }
