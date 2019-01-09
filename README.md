@@ -1,2 +1,0 @@
-# HangmanDesktop
-C#Training
